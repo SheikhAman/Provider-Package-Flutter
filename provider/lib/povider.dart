@@ -53,6 +53,7 @@ class MyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // listen property false korle r listen korbe na update gulo
     return Text(Provider.of<Data>(context, listen: false)
         .data); // reading data from notifyListner
   }
